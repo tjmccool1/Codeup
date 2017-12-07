@@ -1,0 +1,135 @@
+
+/*
+this content is stored in a file named "site.css"
+in a directory named "css"
+
+learning resource
+https://developer.mozilla.org/en-US/docs/Web/CSS
+https://css-tricks.com/guides/
+*/
+
+/*define Header area*/
+	header {
+		height: 100px;
+		padding: 10px;
+		border: 2px;
+		border-bottom: solid purple;
+	}
+
+/* this is the first CSS styling from Codeup*/
+	.fancy-header {
+		color: blue;
+		text-decoration: underline;
+	}
+
+
+/*style to test h1*/
+	h1 {
+		color:green;
+	}
+
+/* background */
+
+	.bg1 {
+		background-image: url(file:///Users/TMcCool/Desktop/Codeup/img/dragon4.png);
+		background-size: : contain;
+		width:500px;
+		border: 2px solid;
+		color: black;
+		resize: both;
+		background-repeat: no-repeat;
+		overflow: scroll; 
+	}
+
+	.bg2{
+		background-color:#ccff33;	
+	}
+
+
+	.bg-img { 
+			background-image: url(file:///Users/TMcCool/Desktop/Codeup/img/dragon4.png),url(file:///Users/TMcCool/Desktop/Codeup/img/dragon4a.png); 
+			background-repeat: no-repeat;
+			background-position: top left, top right;
+			}
+
+	.bg-img1 { 
+			background-image: url(file:///Users/TMcCool/Desktop/Codeup/img/dragon4a.png); 
+			background-repeat: no-repeat;
+			background-position: top right;
+			}
+	
+/*bullet list style change*/
+	ul {
+		list-style:georgian;
+	}
+/*font change Google fonts*/
+	body {
+		padding-left: 275px;
+		padding-right: 275px;
+		font-family: 'Berkshire Swash', cursive;
+		}
+
+	.barcode{
+			font-family: 'Libre Barcode 39 Text', cursive;
+			}
+
+/*table layout*/
+
+	table { 
+			text-align: center;
+			border: outset 10pt;
+			border-color: purple; 
+			border-collapse: separate;
+			border-spacing: 15pt;
+			 }
+	td { 
+		border: inset 5pt;
+		border-color:purple;
+		 }
+	th.special { border: inset 10pt }
+
+/* Selects any <a> that has not been visited yet */
+	a:link {
+	  color: black;
+	}
+
+/* Selects any <a> that has been visited */
+	a:visited {
+	  color: green;
+	}
+
+/*highlight when hovered on*/
+	a:hover {
+	  background-color: red;
+	}
+
+/* Selects any <a> that is being activated */
+	a:active {
+	  color: purple;
+	}
+
+/*background copied from */
+	.bgSizeContain {
+  background-image: url(file:///Users/TMcCool/Desktop/Codeup/img/dragon3.png) ;
+  background-size: contain;
+  border: 2px solid;
+  /*color: pink;*/
+  resize: both;
+  overflow: scroll;
+}
+
+/*background image*/
+
+/*	body {
+	background-image: url("img/dragon.png");
+
+	}*/
+
+	/*#bg1 {
+		background: url(img/dragon.png);
+		background-size: cover;
+	}
+
+	#bg1 {
+		background-image: url("img/dragon.png");
+	}

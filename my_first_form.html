@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 
+			Author: Thomas McCool
+			Date: 29OCT2017
+			Modified: 1NOV2017
+		 -->
+		<title>My First HTML Form</title>
+	</head>
+	<body>
+		<h1>User Login</h1>
+			<form method="POST" action="https://requestb.in/vbmqcevb">
+				<div>
+					<label for="username">Username</label>
+					<input id="username" name="username" type="text" placeholder="Enter your username">
+				</div>
+				<div>
+					<label for="password">Password</label>
+					<input id="password" name="password" type="password" placeholder="Enter your Password">
+				</div>
+				<div>
+					<input type="submit" value="Login">
+				</div>
+			</form>		
+		<h1>Compose an Email</h1>
+			<form method="POST" action="https://requestb.in/vbmqcevb">
+				<div>
+					<label for="EmailTo">Email To:</label>
+					<input id="EmailTo" name="EmailTo" type="text" placeholder="To">
+				</div>
+				<div>
+					<label for="EmailFrom">Email From:</label>
+					<input id="EmailFrom" name="EmailFrom" type="text" placeholder="Enter your Email">
+				</div>
+				<div>
+					<textarea id="email_body" name="email_body" placeholder="Message Here" rows="5" cols="40"></textarea>
+				</div>
+				<div>
+					<input type="checkbox" id="save_copy" name="save_copy" value="yes" checked>
+					<label for="save_copy">Save a copy to sent folder.</label>
+				</div>
+				<div>
+					<input type="submit" value="Send">
+				</div>
+			</form>	
+		<h1>Multiple Choice Test</h1>
+			<form method="POST" action="https://requestb.in/vbmqcevb">
+				<p> 1) How many bits are in a byte?
+				<div>
+					<label>
+						<input type="radio" name="q1" value="10">10
+					</label>
+					<label>
+						<input type="radio" name="q1" value="8">8
+					</label>
+					<lable>
+						<input type="radio" name="q1" value="4">4 
+					</lable>
+				</div>	
+				</p>
+				<p>2) Which dog is larger?
+				<!-- <div> -->
+					<lable>
+						<input type="radio" name="q2" value="Labrador">Labrador
+					</lable>
+					<lable>
+						<input type="radio" name="q2" value="Saint Bernard">Saint Bernard
+					</lable>
+					<lable>
+						<input type="radio" name="q2" value="Chihuaua">Chihuahua 
+					</lable>
+				<!-- </div> -->
+				</p>
+				<p>
+					Which of the following drinks do you prefer:<br>
+					(you may choose more than one)
+				</p>
+				<div>
+					<label><input type="checkbox" id="water" name="q3[]" value="Water">Water</label>
+					<label><input type="checkbox" id="wine" name="q3[]" value="Wine">Wine</label>
+					<label><input type="checkbox" id="wiskey" name="q3[]" value="Wiskey">Whiskey</label>
+					<label><input type="checkbox" id="beer" name="q3[]" value="Beer">Beer</label>
+					<label><input type="checkbox" id="soda" name="q3[]" value="Soda">Soda</label>
+					<label><input type="checkbox" id="tea" name="q3[]" value="Tea">Tea</label>
+					<label><input type="checkbox" id="coffee" name="q3[]" value="Coffee">Coffee</label>
+					</div>
+				<p>3) What time do you get up in the morning?</p>
+					<label for="wakeup time"></label>
+						<select id="time" name="time[]" multiple>
+							<option value="0500">0500</option>
+							<option value="0600">0600</option>
+							<option value="0700">0800</option>
+						</select>
+					<br>
+				<div>
+					<input type="submit" value="SUBMIT">
+				</div>
+			</form>
+		<h1>Select Testing</h1>
+			<form method="POST" action="https://requestb.in/vbmqcevb">
+				<p>1) Did you read question 2 first?</p>
+					<label for="Question1">Select yes or no </label>
+						<select id="question1" name="question1">
+							<option>yes</option>
+							<option>no</option>
+						</select>
+				<p>1) Did you read question 3 first?</p>
+					<label for="Question2">Select yes or no </label>
+						<select id="question2" name="question2">
+							<option>yes</option>
+							<option selected>no</option>
+						</select>
+				<p>1) Did you read question 1 first?</p>
+					<label for="Question3">Select yes or no </label>
+						<select id="question3" name="question3">
+							<option value="1">yes</option>
+							<option value="2">no</option>
+						</select>
+					<div>	
+						<button type="submit" style="color:blue;background-color:green">Done</button>
+					</div>
+			</form>
+	</body>
+</html>

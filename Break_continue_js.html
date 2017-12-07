@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>break and continue JS Exercise</title>
+</head>
+<body>
+	<script>
+
+        //var random = Math.floor((Math.random()*50)+1);
+
+		var random = Math.floor(Math.random()*50);
+            if(random %2 == 0){
+            //generated number is even
+                if(random == 50){
+                    random = random -1 ;
+                }else{
+                    random  = random +1 ;
+                }
+            }
+           
+        console.log('Random odd number to skip is: ' + random);
+        
+		
+		
+		
+
+
+
+		for (var i = 1; i < 55; i++) {
+			if (i % 2 === 0) {
+                //skipping even numbers
+				continue;
+			}
+
+            if (random == i) {
+                console.log('Yikes! Skipping number: ' + random);
+            } else {
+                console.log('Here is an odd number: ' + i);
+            }
+            if (i >= 49) {
+                break;
+            }
+		}
+	</script>
+</body>
+</html>
+
+
+
